@@ -1,1 +1,29 @@
-contentArea
+
+header {
+  width: 960px;
+}
+
+.content-area {
+  width: 960px;
+}
+#my-pic {
+  width: 100px;
+  height: 100px;
+  display: inline;
+}
+.first-p{
+  display: inline;
+}
+.main-section {
+  width: 650px;
+  float: left;
+}
+.small-pic {
+  width: 50px;
+  height: 50px;
+}
+.sidebar {
+  float: right;
+  width: 270px;
+
+}

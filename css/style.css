@@ -1,6 +1,25 @@
 
+* {
+  border: 2px solid red;
+}
+body {
+  background: yellow;
+}
+h1, h2, h3, h4 {
+  color: white;
+  background: #4aaaa5;
+}
+h1.header {
+  width: auto;
+}
+
+p {
+  text-indent: 25px;
+}
 header {
   width: 960px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
 }
 
 .content-area {
@@ -9,11 +28,8 @@ header {
 #my-pic {
   width: 100px;
   height: 100px;
-  display: inline;
 }
-.first-p{
-  display: inline;
-}
+
 .main-section {
   width: 650px;
   float: left;
@@ -26,4 +42,11 @@ header {
   float: right;
   width: 270px;
 
+}
+footer {
+  text-align: center;
+  clear: both;
+  margin: 0 auto;
+  background: #666666;
+  display: block;
 }

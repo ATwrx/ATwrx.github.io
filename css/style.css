@@ -5,84 +5,141 @@
 html, body {
   height: 100%;
   margin: 0;
-  background: grey;
+  background: beige;
   font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
-  min-height: 100%;
-  margin-bottom: -50px;
-}
 
-h1, h2, h3, h4 {
-  color: white;
-  background: #4aaaa5;
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
-
-h1 {
-  font-size: 1.8em;
-  width: auto;
-  float: left;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.3em;
-}
-h4 {
-  font-size: 1.2em;
-}
-ul {
-
-  vertical-align: baseline;
-}
-
-
-p {
-  text-indent: 25px;
 }
 
 header {
-  width: 960px;
+  width: 100%;
   background: #ffffff;
   border: 1px solid #cccccc;
+  height: 70px;
+  margin-bottom: 2.2em;
+
+}
+.topbar {
+  width: 960px;
+  margin: 0 auto;
+}
+header h1 {
+  text-indent: 0.8em;
+  font-size: 1.9em;
+  font-weight: 550;
+  width: 300px;
+  float: left;
+  height: 62px;
+  position: relative;
+  bottom: 13px;
+  padding-top: 22px;
+  color: white;
+  background: #4aaaa5;
+
 }
 
+/* Heading sizes */
+h1, h2, h3, h4 {
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+h2, h3, h4 {
+  color: #4aaaa5;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+/* Top Navigation */
+li {
+  float: right;
+}
+a {
+  display: inline;
+  padding: 8px;
+  float: left;
+}
+
+/* Main Body Area */
+p {
+
+}
 .content-area {
   width: 960px;
-}
 
+}
 #my-pic {
   width: 100px;
   height: 100px;
 }
-
 .main-section {
+  height: 500px;
   width: 650px;
   float: left;
+  background: white;
+  border: 3px solid lightgray;
+  padding: 10px 10px;
 }
-
+.main-section p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-indent: 2em;
+}
 .small-pic {
   width: 50px;
   height: 50px;
 }
 
+/*Links on the Side*/
 .sidebar {
   float: right;
-  width: 270px;
-
+  width: 260px;
+  height: 140px;
+  background: white;
+  border: 3px solid lightgray;
+  /*margin: 10px 10px;*/
 }
+.sidebar h3 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left:20px;
+  border-bottom: 3px solid lightgrey;
+  width: 220px;
+}
+.sidebar a {
+  display: inline-block;
+}
+.links {
+  padding-left: 25px;
+  margin-top: 20px;
+}
+/*Footer Area*/
+
 footer {
   text-align: center;
-  clear: both;
-  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  width:100%;
   background: #666666;
-  display: block;
   height: 50px;
+  border-top: 8px solid #4aaaa5;
+}
+.footer {
+  font-weight: bold;
+  padding-top: 25px;
+  font-size: .8em;
 }

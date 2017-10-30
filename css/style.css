@@ -4,6 +4,7 @@
 } */
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   background: beige;
   font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
@@ -66,11 +67,12 @@ h4 {
 /* Top Navigation */
 li {
   float: right;
+  vertical-align: middle;
 }
 a {
   display: inline;
   padding: 8px;
-  float: left;
+  /*float: left;*/
 }
 
 /* Main Body Area */

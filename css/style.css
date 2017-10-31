@@ -6,7 +6,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background: beige;
+  background: #ffffcc;
   font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
 }
 
@@ -16,22 +16,26 @@ html, body {
 
 }
 
+/*
+Top Bar
+*/
 header {
-  width: 100%;
+  width: 960px;
   background: #ffffff;
-  border: 1px solid #cccccc;
+  border:0px 1px solid #cccccc;
   height: 70px;
+  margin: 0 auto;
   margin-bottom: 2.2em;
 
 }
 .topbar {
-  width: 960px;
-  margin: 0 auto;
+  width: 100%;
+
 }
 header h1 {
   text-indent: 0.8em;
   font-size: 1.9em;
-  font-weight: 550;
+  font-weight: 500;
   width: 300px;
   float: left;
   height: 62px;
@@ -40,10 +44,36 @@ header h1 {
   padding-top: 22px;
   color: white;
   background: #4aaaa5;
+}
+header ul{
+ list-style-type: none;
+ margin-right: 40px;
+ padding-top: 25px;
+
+}
+header li {
+  text-decoration: none;
+  float: right;
+  vertical-align: middle;
+  border-right: 1px solid #bbb;
+}
+header li:first-child {
+  border-right: none;
+}
+header a:hover {
+    background-color: lightgray;
+}
+header a {
+  display: inline;
+  padding: 8px;
+  text-decoration: none;
 
 }
 
-/* Heading sizes */
+/*
+ Heading size
+*/
+
 h1, h2, h3, h4 {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
@@ -53,6 +83,8 @@ h2, h3, h4 {
 }
 h2 {
   font-size: 1.6em;
+  border-bottom: 3px solid lightgrey;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -64,16 +96,6 @@ h4 {
   font-size: 1.2em;
 }
 
-/* Top Navigation */
-li {
-  float: right;
-  vertical-align: middle;
-}
-a {
-  display: inline;
-  padding: 8px;
-  /*float: left;*/
-}
 
 /* Main Body Area */
 p {
@@ -83,17 +105,19 @@ p {
   width: 960px;
 
 }
-#my-pic {
-  width: 100px;
-  height: 100px;
-}
 .main-section {
-  height: 500px;
+  height: auto;
   width: 650px;
   float: left;
   background: white;
   border: 3px solid lightgray;
   padding: 10px 10px;
+}
+/*
+Index Page
+*/
+.main-section{
+  margin-bottom: 100px;
 }
 .main-section p {
   font-size: 1.1em;
@@ -104,8 +128,52 @@ p {
   width: 50px;
   height: 50px;
 }
+#my-pic {
+  width: 100px;
+  height: 100px;
+}
 
-/*Links on the Side*/
+/*
+Form Page
+*/
+
+ form input {
+   width: 100%
+ }
+ #formMessage {
+   height: 100px;
+ }
+ #submit {
+   height: 25px;
+ }
+
+/*
+Portfolio
+*/
+.flex-container {
+  display: flex;
+
+}
+.flex-obj {
+  width: 280px;
+  height: 280px;
+  margin: 12px;
+  padding: 5px;
+}
+.banner {
+  position: relative;
+  bottom: 100px;
+  text-align: center;
+  background: #4aaaa5;
+  color: white;
+  width: 300px;
+  height: 45px;
+  padding-top: 8px;
+}
+
+/*
+Links on the Side
+*/
 .sidebar {
   float: right;
   width: 260px;
@@ -126,8 +194,9 @@ p {
   display: inline-block;
 }
 .links {
-  padding-left: 25px;
+  padding-left: 50px;
   margin-top: 20px;
+
 }
 /*Footer Area*/
 

@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+
   background-image: url("../images/bg.png");
   background-repeat: repeat;
   font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
@@ -23,6 +24,7 @@ Top Bar
 header {
 
   width: 100%;
+
   background: #ffffff;
   border:0px 1px solid #cccccc;
   height: 70px;
@@ -45,7 +47,7 @@ header h1 {
   height: 62px;
   position: relative;
   bottom: 13px;
-  padding-top: 21px;
+  padding-top: 22px;
   color: white;
   background: #4aaaa5;
 }

@@ -6,7 +6,8 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background: #ffffcc;
+  background-image: url("../images/bg.png");
+  background-repeat: repeat;
   font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
 }
 
@@ -20,7 +21,8 @@ html, body {
 Top Bar
 */
 header {
-  width: 960px;
+
+  width: 100%;
   background: #ffffff;
   border:0px 1px solid #cccccc;
   height: 70px;
@@ -29,8 +31,10 @@ header {
 
 }
 .topbar {
-  width: 100%;
-
+  align-self: center;
+  width: 960px;
+  align-content: center;
+  margin: 0 auto;
 }
 header h1 {
   text-indent: 0.8em;
@@ -41,7 +45,7 @@ header h1 {
   height: 62px;
   position: relative;
   bottom: 13px;
-  padding-top: 22px;
+  padding-top: 21px;
   color: white;
   background: #4aaaa5;
 }
@@ -62,6 +66,9 @@ header li:first-child {
 }
 header a:hover {
     background-color: lightgray;
+}
+header a:active {
+  color: #FF00FF;
 }
 header a {
   display: inline;
@@ -85,11 +92,12 @@ h2 {
   font-size: 1.6em;
   border-bottom: 3px solid lightgrey;
   margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-up: 5px;
 }
 
 h3 {
   font-size: 1.4em;
-
 }
 
 h4 {
@@ -98,9 +106,7 @@ h4 {
 
 
 /* Main Body Area */
-p {
 
-}
 .content-area {
   width: 960px;
 

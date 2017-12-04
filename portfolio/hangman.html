@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Holiday Hangman</title>
+
+  <!-- Personal CSS & JQuery-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Title  Area-->
+  <div class="container">
+    <div class="top-title">
+      <h1 class="title">Holiday Hangman Game</h1>
+      <div id="pregame-message-box">
+        <h3 id="pregame-message">Press any key to get started!</h3>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Main Game Area  -->
+    <p><b>Current Word:<div id="word-format" class="gold"></div></b></p>
+
+
+    <!-- Scores/Guesses Section -->
+
+    <p><b>Guesses Remaining:</b>
+      <span id="guesses">6</span>
+    </p>
+
+    <div id="wrong-letter-box">
+      <h6>Incorrect Letters: <span id="guess-field" class="gold"></span></h6>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="assets/js/hangman.js"></script>
+</body>
+</html>

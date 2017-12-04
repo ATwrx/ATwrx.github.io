@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <title>Trivia</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Timed Tech Quiz</h1>
+        <div id="welcome">
+            <p class="timer"> Get ready, the quiz will begin in
+                <span id="initial-countdown">5</span>
+            </p>
+        </div>
+        <div id="game">
+            <p>Time until next question
+                <span id="game-timer" />
+            </p>
+            <div id="question"></div>
+            <div id="choices">
+                <p>
+                    <div id="A"></div>
+                    <div id="B"></div>
+                    <div id="C"></div>
+                    <div id="D"></div>
+                </p>
+            </div>
+        </div>
+        <div class="results">
+            <div id="results"></div>
+            <button class="restart-btn" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="assets/javascript/trivia.js"></script>
+
+</body>
+
+</html>

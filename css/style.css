@@ -45,6 +45,15 @@ Form Page
 /*
 Portfolio
 */
+.mb-0 {
+  background: grey;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin: 0 auto; 
+  height: 50px;
+  padding: 20px 20px;
+  width: 100%;
+}
 .banner {
   position: relative;
   bottom: 100px;

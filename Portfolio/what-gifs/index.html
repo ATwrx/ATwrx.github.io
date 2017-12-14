@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>What GIF's?</title>
+</head>
+
+<body>
+    <div class="title-search-bar">
+        <h1>Giphy API Example</h1>
+        <div id="buttons"></div>
+        <div class="search-bar">
+            <input type="text" name="query" id="user-search" />
+            <input id="submit" type="button" value="Submit" class="btn  btn-sm btn-success" />
+            <input type="button" class="trending btn btn-sm btn-danger" value="See what's trending" />
+        </div>
+    </div>
+    <hr>
+    <div id="results"></div>
+
+    <script src="assets/logic.js"></script>
+</body>
+
+</html>

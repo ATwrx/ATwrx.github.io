@@ -1,90 +1,114 @@
-
 /* * {
   border: 2px solid red;
 } */
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-image: url("../images/bg.png");
-  background-repeat: repeat;
-  font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+    font-family: 'Arial', 'Helvetica Nue', Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
-  color: #4aaaa5;
-  font-weight: bold;
-  border-bottom: 3px solid lightgrey;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-weight: bold;
+    border-bottom: 3px solid lightgrey;
 }
+
 
 /*
 Index Page
 */
+
 .small-pic {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
+
 #my-pic {
-  width: 25%;
-  height: 25%;
-  margin-right: 35px;
+    width: 25%;
+    height: 25%;
+    margin-right: 35px;
 }
+
+
 /*
 Form Page
 */
- form input {
-   width: 100%
- }
- #formMessage {
-   height: 100px;
- }
- #submit {
-   height: 25px;
- }
+
+form input {
+    width: 100%
+}
+
+#formMessage {
+    height: 100px;
+}
+
+#submit {
+    height: 25px;
+}
+
+
 /*
 Portfolio
 */
+
 .mb-0 {
-  background: grey;
-  border: 2px solid white;
-  border-radius: 25px;
-  margin: 0 auto; 
-  height: 50px;
-  padding: 20px 20px;
-  width: 100%;
+    background: rgb(177, 160, 160);
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 0 auto;
+    height: 50px;
+    padding: 20px 20px;
+    width: 100%;
 }
+
 .banner {
-  position: relative;
-  bottom: 100px;
-  text-align: center;
-  background: #4aaaa5;
-  color: white;
-  width: 300px;
-  height: 45px;
-  padding-top: 8px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    background: #4aaaa5;
+    color: white;
+    width: 300px;
+    height: 45px;
+    padding-top: 8px;
 }
+
+
 /*
 Sidebar
 */
+
 .sidebar {
-  border: 3px solid lightgray;
+    border: 3px solid lightgray;
 }
+
 .sidebar a {
-  display: inline-block;
+    display: inline-block;
 }
+
+
 /*Footer Area*/
 
 footer {
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width:100%;
-  background: #666666;
-  height: 50px;
-  border-top: 8px solid #4aaaa5;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #666666;
+    height: 50px;
+    border-top: 8px solid #4aaaa5;
 }
+
 .footer {
-  font-weight: bold;
-  padding-top: 15px;
+    font-weight: bold;
+    padding-top: 15px;
 }

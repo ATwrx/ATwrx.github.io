@@ -1,3 +1,4 @@
-import Bar from './Bar'
+import MenuBar from './MenuBar'
+import SwitchContainer from './SwitchContainer';
 
-export {Bar}
+export {MenuBar, SwitchContainer}

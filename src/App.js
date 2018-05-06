@@ -1,47 +1,47 @@
-import React, { Component } from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import {Header, Sidebar, Segment, Button} from 'semantic-ui-react';
 
-import {Header, Container, Sidebar, Segment, Button, Icon, Image, Menu} from 'semantic-ui-react';
-import {Bar} from './components/Layouts/'
+import {MenuBar, SwitchContainer} from './components/Layouts/';
+
 const styles = {
   App: {
-    height: "100vh"
+    height: '100vh',
   },
-  MenuToggle: {
-    padding: "1em 1em",
-    margin: "1em 1em",
-    width: "50%"
-  }
+  Content : {
+    padding: '1em 1em',
+    margin: '1em 1em',
+    position: 'relative',
+    top: '60px'
+    // width: '50%',
+  },
+};
 
-}
+// style={styles.MenuToggle}
+
 class App extends Component {
-  state = { visible: false}
-
-  toggleVisible = () => this.setState({visible: !this.state.visible})
+  state = {visible: false};
+  toggleVisible = () => this.setState({visible: !this.state.visible});
 
   render() {
-    const { visible } = this.state;
+    const {visible} = this.state;
     return (
       <Router>
-      <div className="App" style={styles.App}>
-         
-      <Sidebar.Pushable as={Segment}>
- 
-      <Bar visible={visible} />
-        <Sidebar.Pusher>
-          <Segment basic>
-            <Header as='h1' dividing>Andrew C. Thompson's Portfolio</Header>
+        <Segment.Group className="App" style={styles.App}>
+          <Segment attached>
+            <Header as="h1">
+              Andrew Thompson's Portfolio
+            </Header>
           </Segment>
-          <Container>
 
-          </Container>
-         <Button style={styles.MenuToggle} onClick={this.toggleVisible} primary round>
-            Toggle Menu
-        </Button> 
-        </Sidebar.Pusher>
-      </Sidebar.Pushable>
-        </div>
+          <Sidebar.Pushable as={Segment}>
+            <MenuBar visible={visible} />
+            <Sidebar.Pusher>
+              <SwitchContainer />
+              <Button style={styles.Content} icon={visible ? "chevron left" : "chevron right"} onClick={this.toggleVisible} size="tiny" />
+            </Sidebar.Pusher>
+          </Sidebar.Pushable>
+        </Segment.Group>
       </Router>
     );
   }

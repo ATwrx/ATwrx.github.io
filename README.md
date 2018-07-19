@@ -1,2 +1,3 @@
-# Git Pages portfolio
-## If your reading this, please hire me. 
+# New Portfolio
+---
+Built with React, Graphql, and Gatsby.
